@@ -498,8 +498,8 @@
             position: absolute;
             top: -100px;
             left: -100px;
-            width: 300px;
-            height: 300px;
+            width: 800px;
+            height: 800px;
             background: url('data:image/svg+xml;utf8,<svg viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg"><path fill="%2327ae60" opacity="0.05" d="M40,20L60,40L80,20L100,40L80,60L100,80L80,100L60,80L40,100L20,80L40,60L20,40L40,20Z" /></svg>');
             background-size: contain;
             z-index: 0;
@@ -545,7 +545,7 @@
         }
         
         .product-img {
-            height: 300px;
+            height: 800px;
             overflow: hidden;
             position: relative;
         }
@@ -1540,6 +1540,30 @@
                 grid-template-columns: 1fr;
             }
         }
+/* ===== Mobile Horizontal Scroll ===== */
+@media (max-width: 768px) {
+  .products-grid {
+    display: flex !important;
+    flex-wrap: nowrap !important;
+    overflow-x: auto !important;
+    -webkit-overflow-scrolling: touch;
+    gap: 15px;
+    padding: 15px 10px 25px 10px;
+    margin: 0 -10px;
+  }
+
+  .product-card {
+    min-width: 280px;
+    scroll-snap-align: start;
+    margin-bottom: 0;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+  }
+
+  /* Hide scrollbar (optional) */
+  .products-grid::-webkit-scrollbar {
+    display: none;
+  }
+}
     </style>
 </head>
 <body>
@@ -1586,10 +1610,10 @@
     <section class="hero" id="home">
         <div class="hero-content">
             <h1 data-aos="fade-up" data-aos-duration="1000">Premium Incense Sticks By Purelax</h1>
-           <p data-aos="fade-up" data-aos-duration="1000" data-aos-delay="200" style="color: white;">Experience the purest aromas with our herbal incense sticks. Perfect for relaxation, meditation, and creating a serene atmosphere while repelling pests naturally.</p>
+            <p data-aos="fade-up" data-aos-duration="1000" data-aos-delay="200"><p style="color: white;">Experience the purest aromas with our herbal incense sticks. Perfect for relaxation, meditation, and creating a serene atmosphere while repelling pests naturally.</p>
             <div class="hero-btns" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="400">
                 <a href="#products" class="btn btn-primary">Explore Products</a>
-                <a href="#contact" class="btn btn-outline" style="color: white; border-color: white;">Request Samples</a>
+                <a href="#contact" class="btn btn-primary">Request Samples</a>
             </div>
         </div>
         
@@ -1659,71 +1683,71 @@
             <div class="products-grid">
                 <!-- Product 1 -->
                 <div class="product-card" data-aos="fade-up" data-aos-delay="200">
-                    <div class="product-badge">Best Seller</div>
+                    <div class="product-badge">HERBAL POWER PACK</div>
                     <div class="product-img">
-                        <img src="https://raw.githubusercontent.com/boostonix/purelax.github.io/main/product%201.jpg" alt="Purelax Incense Sticks">
+                        <img src="https://raw.githubusercontent.com/boostonix/purelax.github.io/refs/heads/main/product%20image%201.png">
                     </div>
                     <div class="product-info">
-                        <span class="product-category">Floral Collection</span>
-                        <h3>Purelax Classic Incense</h3>
-                        <p class="product-description">A soothing blend of purity and nature – Purelax, where every breath heals. Our signature fragrance with rose and jasmine notes.</p>
+                        <span class="product-category">Mosquito Repellent</span>
+                        <h3>Purelax Power</h3>
+                        <p class="product-description">PURELAX Power – Herbal Repellent Sticks
+Fights mosquitoes with herbs. Safe for babies, perfect for peaceful sleep.</p>
                         <div class="product-meta">
-                            <div class="product-price">₹450/box</div>
                             <a href="#contact" class="btn btn-accent">Enquire Now</a>
                         </div>
                     </div>
                 </div>
                 
                 <!-- Product 2 -->
-                <div class="product-card" data-aos="fade-up" data-aos-delay="300">
-                    <div class="product-badge">New</div>
+              <div class="product-card" data-aos="fade-up" data-aos-delay="200">
+                    <div class="product-badge">LONG-LASTING POWER</div>
                     <div class="product-img">
-                        <img src="https://images.unsplash.com/photo-1607619056574-7b8d3ee536b2?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1480&q=80" alt="Mosquito Repellent Incense">
+                        <img src="https://raw.githubusercontent.com/boostonix/purelax.github.io/refs/heads/main/product%20image%202.png">
                     </div>
                     <div class="product-info">
                         <span class="product-category">Mosquito Repellent</span>
-                        <h3>Purelax Mosquito Guard</h3>
-                        <p class="product-description">Dual-action incense that repels mosquitoes while filling your space with a refreshing lemongrass and eucalyptus aroma.</p>
+                        <h3>Purelax Jumbo</h3>
+                        <p class="product-description">PURELAX Jumbo – Extra Long Incense Sticks
+Burns longer, smells stronger. Perfect for large spaces & deep relaxation.
+</p>
                         <div class="product-meta">
-                            <div class="product-price">₹550/box</div>
                             <a href="#contact" class="btn btn-accent">Enquire Now</a>
                         </div>
                     </div>
                 </div>
                 
                 <!-- Product 3 -->
-                <div class="product-card" data-aos="fade-up" data-aos-delay="400">
+              <div class="product-card" data-aos="fade-up" data-aos-delay="200">
+                    <div class="product-badge">PURE HERBAL STRENGTH</div>
                     <div class="product-img">
-                        <img src="https://images.unsplash.com/photo-1605000797499-95a51c5269ae?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1471&q=80" alt="Meditation Incense Sticks">
+                        <img src="https://raw.githubusercontent.com/boostonix/purelax.github.io/refs/heads/main/product%20image%203.png">
                     </div>
                     <div class="product-info">
-                        <span class="product-category">Meditation Series</span>
-                        <h3>Purelax Zen Harmony</h3>
-                        <p class="product-description">Specially formulated for meditation with sandalwood, patchouli, and lavender to enhance focus and relaxation.</p>
+                        <span class="product-category">Mosquito Repellent</span>
+                        <h3>Purelax Herbal</h3>
+                        <p class="product-description">PURELAX Herbal – Natural Eco Incense Sticks
+Crafted with herbs for calm, clean air. Ideal for daily peaceful rituals.</p>
                         <div class="product-meta">
-                            <div class="product-price">₹500/box</div>
                             <a href="#contact" class="btn btn-accent">Enquire Now</a>
                         </div>
                     </div>
                 </div>
                 
                 <!-- Product 4 -->
-                <div class="product-card" data-aos="fade-up" data-aos-delay="500">
-                    <div class="product-badge">Eco-Friendly</div>
+            <div class="product-card" data-aos="fade-up" data-aos-delay="200">
+                    <div class="product-badge">COMING SOON</div>
                     <div class="product-img">
-                        <img src="https://images.unsplash.com/photo-1607619056574-7b8d3ee536b2?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1480&q=80" alt="Organic Incense Sticks">
+                        <img src="https://images.unsplash.com/photo-1614332287897-cdc485fa562d?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D">
                     </div>
                     <div class="product-info">
-                        <span class="product-category">Organic Collection</span>
-                        <h3>Purelax Organic Bliss</h3>
-                        <p class="product-description">Certified organic incense sticks with no synthetic additives. Pure, natural fragrances from sustainable sources.</p>
+                        <span class="product-category">Mosquito Repellent</span>
+                        <h3>Purelax Incense</h3>
+                        <p class="product-description">COMING SOON</p>
                         <div class="product-meta">
-                            <div class="product-price">₹600/box</div>
                             <a href="#contact" class="btn btn-accent">Enquire Now</a>
                         </div>
                     </div>
                 </div>
-            </div>
             
             <div class="text-center" data-aos="fade-up" data-aos-delay="600">
                 <a href="#contact" class="btn btn-primary" style="margin-top: 50px;">Request Full Catalog</a>
@@ -1747,7 +1771,7 @@
                         <img src="https://images.unsplash.com/photo-1589998059171-988d887df646?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1476&q=80" alt="Raw Materials">
                         <div class="slide-content">
                             <h3>Premium Natural Ingredients</h3>
-                           <p style="color: white;">We source only the finest organic herbs, flowers, and essential oils from sustainable suppliers worldwide.</p>
+                            <p style="color: white;">We source only the finest organic herbs, flowers, and essential oils from sustainable suppliers worldwide.</p>
                         </div>
                     </li>
                     <li class="splide__slide">
@@ -1898,7 +1922,7 @@
     <section class="cta">
         <div class="container">
             <h2 data-aos="fade-up">Ready to Elevate Your Product Line?</h2>
-            <p data-aos="fade-up" data-aos-delay="100">Partner with Naturoma Purelax for premium quality incense sticks that your customers will love.</p>
+            <p data-aos="fade-up" data-aos-delay="100" style="color: white;">Partner with Naturoma Purelax for premium quality incense sticks that your customers will love.</p>
             <div data-aos="fade-up" data-aos-delay="200">
                 <a href="#contact" class="btn btn-primary">Get Wholesale Pricing</a>
             </div>
@@ -1988,11 +2012,10 @@
                             <label for="interest">Product Interest</label>
                             <select id="interest" name="interest" class="form-control">
                                 <option value="">Select an option</option>
-                                <option value="classic">Purelax Classic Incense</option>
-                                <option value="mosquito">Mosquito Repellent</option>
-                                <option value="meditation">Meditation Series</option>
-                                <option value="organic">Organic Collection</option>
-                                <option value="custom">Custom Formulation</option>
+                                <option value="classic">Purelax POWER</option>
+                                <option value="mosquito">Purelax JUMBO</option>
+                                <option value="meditation">Purelax HERBAL</option>
+                                <option value="organic">COMING SOON</option>
                                 <option value="other">Other</option>
                             </select>
                         </div>
@@ -2027,6 +2050,7 @@
                 <div class="footer-col">
                     <h3>NATUROMA PURELAX</h3>
                     <p style="color: white;">Manufacturers of premium quality, organic incense sticks for wholesale and B2B customers worldwide since 2016. Our products combine traditional craftsmanship with modern quality standards.</p>
+                    <a href="https://wa.me/919408107835" class="whatsapp-btn" target="_blank">
                         <i class="fab fa-whatsapp"></i> WhatsApp Us
                     </a>
                 </div>
@@ -2045,32 +2069,21 @@
                     </ul>
                 </div>
                 
-                <div class="footer-col">
-                    <h3>Products</h3>
-                    <ul class="footer-links">
-                        <li><a href="#">Classic Incense Sticks</a></li>
-                        <li><a href="#">Mosquito Repellent</a></li>
-                        <li><a href="#">Meditation Series</a></li>
-                        <li><a href="#">Organic Collection</a></li>
-                        <li><a href="#">Custom Formulations</a></li>
-                        <li><a href="#">Private Labeling</a></li>
-                    </ul>
-                </div>
                 
                 <div class="footer-col">
                     <h3>Contact Info</h3>
                     <ul class="footer-contact">
                         <li>
                             <i class="fas fa-map-marker-alt"></i>
-                            <span>G H B SOCIETY, 777/5486, NR GAYATRI MANDIR, L B S ROAD, BAPUNAGAR, Ahmedabad, Gujarat, 380024</span>
+                             <span>G H B SOCIETY, 777/5486, NR GAYATRI MANDIR, L B S ROAD, BAPUNAGAR, Ahmedabad, Gujarat, 380024</span>
                         </li>
                         <li>
-                            <i class="fas fa-phone-alt"></i>
-                            <a href="tel:+919408107835">+91 94081 07835</a>
+                            <i class="fas fa-phone-alt"></i> 
+                             <a href="tel:+919408107835">+91 94081 07835</a>
                         </li>
                         <li>
                             <i class="fas fa-envelope"></i>
-                            <a href="mailto:info@naturomaincense.com">info@naturomaincense.com</a>
+                             <a href="mailto:info@naturomaincense.com">info@naturomaincense.com</a>
                         </li>
                     </ul>
                     
@@ -2084,7 +2097,7 @@
             </div>
             
             <div class="footer-bottom">
-                <p>&copy; 2025 Naturoma Purelax. All Rights Reserved. | Designed by Boostonix</p>
+                <p style="color: white;">&copy; 2025 Naturoma Purelax. All Rights Reserved. | Designed by Boostonix</p>
             </div>
         </div>
     </footer>
@@ -2135,7 +2148,7 @@
             
             <h3>7. Contact Us</h3>
             <p>If you have any questions about this Privacy Policy, please contact us at:</p>
-            <p>Email: privacy@naturomapurelax.com<br>
+            <p>Email: info@naturomapurelax.com<br>
             Phone: +91 94081 07835</p>
         </div>
     </div>
