@@ -1,0 +1,305 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Our AI Methodology | NEXA AI</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.4/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.8/ScrollMagic.min.js"></script>
+</head>
+<body>
+    <!-- Navigation (same as homepage) -->
+    
+    <!-- Methodology Hero -->
+    <section class="methodology-hero">
+        <div class="hero-content">
+            <h1 class="hero-title">
+                <span class="title-line">The Science Behind</span>
+                <span class="title-line gradient-text">Our AI Marketing</span>
+            </h1>
+            <p class="hero-subtitle">Discover how we combine cutting-edge artificial intelligence with marketing expertise to deliver unmatched results</p>
+        </div>
+        <div class="hero-visual">
+            <div class="ai-brain" id="aiBrainVisual"></div>
+        </div>
+    </section>
+
+    <!-- Core Methodology -->
+    <section class="core-methodology">
+        <div class="section-header">
+            <h2 class="section-title">Our <span class="gradient-text">Core Methodology</span></h2>
+            <p class="section-subtitle">A proprietary framework that delivers consistent, measurable results</p>
+        </div>
+        <div class="methodology-steps">
+            <div class="step-container">
+                <div class="step-content">
+                    <div class="step-number">01</div>
+                    <h3 class="step-title">Data Fusion</h3>
+                    <p class="step-desc">We integrate first-party, third-party, and market data into a unified AI-ready dataset. Our systems process over 2.3 million data points per client daily.</p>
+                    <ul class="step-features">
+                        <li>Cross-channel data integration</li>
+                        <li>Real-time data processing</li>
+                        <li>Automated quality checks</li>
+                    </ul>
+                </div>
+                <div class="step-visual">
+                    <div class="data-flow-animation" id="dataFlowViz"></div>
+                </div>
+            </div>
+            <div class="step-container reverse">
+                <div class="step-content">
+                    <div class="step-number">02</div>
+                    <h3 class="step-title">Predictive Modeling</h3>
+                    <p class="step-desc">Our ensemble models combine supervised, unsupervised, and reinforcement learning to forecast market movements and customer behaviors with 92% accuracy.</p>
+                    <ul class="step-features">
+                        <li>Time-series forecasting</li>
+                        <li>Customer lifetime value prediction</li>
+                        <li>Churn risk assessment</li>
+                    </ul>
+                </div>
+                <div class="step-visual">
+                    <div class="model-animation" id="modelViz"></div>
+                </div>
+            </div>
+            <div class="step-container">
+                <div class="step-content">
+                    <div class="step-number">03</div>
+                    <h3 class="step-title">Hyper-Optimization</h3>
+                    <p class="step-desc">Continuous multi-armed bandit testing across all marketing parameters ensures maximum performance at all times.</p>
+                    <ul class="step-features">
+                        <li>Real-time bid management</li>
+                        <li>Creative element testing</li>
+                        <li>Channel mix optimization</li>
+                    </ul>
+                </div>
+                <div class="step-visual">
+                    <div class="optimization-animation" id="optimizationViz"></div>
+                </div>
+            </div>
+            <div class="step-container reverse">
+                <div class="step-content">
+                    <div class="step-number">04</div>
+                    <h3 class="step-title">Autonomous Execution</h3>
+                    <p class="step-desc">Our AI agents implement strategies and make micro-adjustments 24/7 based on real-time data streams.</p>
+                    <ul class="step-features">
+                        <li>Automated campaign management</li>
+                        <li>Dynamic budget allocation</li>
+                        <li>Anomaly detection</li>
+                    </ul>
+                </div>
+                <div class="step-visual">
+                    <div class="execution-animation" id="executionViz"></div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- AI Models Section -->
+    <section class="ai-models-section">
+        <div class="section-header">
+            <h2 class="section-title">Our Proprietary <span class="gradient-text">AI Models</span></h2>
+            <p class="section-subtitle">Custom-built machine learning architectures designed specifically for marketing</p>
+        </div>
+        <div class="models-grid">
+            <div class="model-card">
+                <div class="model-header">
+                    <h3 class="model-name">NEXA-Convert</h3>
+                    <div class="model-type">Deep Learning</div>
+                </div>
+                <div class="model-desc">
+                    <p>Predicts conversion probability for each visitor in real-time, enabling dynamic personalization that increases conversions by 37-68%.</p>
+                </div>
+                <div class="model-tech">
+                    <span class="tech-tag">TensorFlow</span>
+                    <span class="tech-tag">BERT</span>
+                    <span class="tech-tag">LSTM</span>
+                </div>
+            </div>
+            <div class="model-card">
+                <div class="model-header">
+                    <h3 class="model-name">NEXA-Trend</h3>
+                    <div class="model-type">Time Series</div>
+                </div>
+                <div class="model-desc">
+                    <p>Identifies emerging market trends 3-6 months before they become mainstream, giving clients first-mover advantage.</p>
+                </div>
+                <div class="model-tech">
+                    <span class="tech-tag">Prophet</span>
+                    <span class="tech-tag">ARIMA</span>
+                    <span class="tech-tag">Transformer</span>
+                </div>
+            </div>
+            <div class="model-card">
+                <div class="model-header">
+                    <h3 class="model-name">NEXA-Creative</h3>
+                    <div class="model-type">Generative AI</div>
+                </div>
+                <div class="model-desc">
+                    <p>Generates and scores thousands of creative variations to identify highest performing combinations.</p>
+                </div>
+                <div class="model-tech">
+                    <span class="tech-tag">GAN</span>
+                    <span class="tech-tag">Diffusion</span>
+                    <span class="tech-tag">CLIP</span>
+                </div>
+            </div>
+            <div class="model-card">
+                <div class="model-header">
+                    <h3 class="model-name">NEXA-Attribute</h3>
+                    <div class="model-type">Graph Neural Net</div>
+                </div>
+                <div class="model-desc">
+                    <p>Maps complex customer journeys across channels to accurately attribute conversions and optimize spend.</p>
+                </div>
+                <div class="model-tech">
+                    <span class="tech-tag">GNN</span>
+                    <span class="tech-tag">Attention</span>
+                    <span class="tech-tag">PyG</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Data Visualization -->
+    <section class="data-viz-section">
+        <div class="viz-container">
+            <div class="viz-content">
+                <h2 class="section-title">Real-Time <span class="gradient-text">Data Intelligence</span></h2>
+                <p class="section-subtitle">Our dashboard provides actionable insights powered by live data streams</p>
+                <ul class="viz-features">
+                    <li>Live campaign performance</li>
+                    <li>Customer segment analytics</li>
+                    <li>Competitive benchmarking</li>
+                    <li>Anomaly detection alerts</li>
+                </ul>
+                <button class="primary-btn magnetic">Request Demo</button>
+            </div>
+            <div class="viz-animation">
+                <div class="dashboard-preview" id="dashboardPreview"></div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Case Study Highlights -->
+    <section class="case-highlights">
+        <div class="section-header">
+            <h2 class="section-title"><span class="gradient-text">Proven</span> Results</h2>
+            <p class="section-subtitle">See how our AI methodology delivers measurable impact</p>
+        </div>
+        <div class="case-grid">
+            <div class="case-card">
+                <div class="case-header">
+                    <div class="client-logo">
+                        <img src="assets/clients/fintech.svg" alt="Fintech Company">
+                    </div>
+                    <div class="case-stats">
+                        <div class="stat-value">312%</div>
+                        <div class="stat-label">ROI Increase</div>
+                    </div>
+                </div>
+                <div class="case-content">
+                    <h3 class="case-title">Fintech Customer Acquisition</h3>
+                    <p class="case-desc">Our predictive models identified high-value customer segments that traditional targeting missed, reducing CPA by 58% while increasing conversion quality.</p>
+                </div>
+                <div class="case-cta">
+                    <a href="#" class="text-link">Read Case Study →</a>
+                </div>
+            </div>
+            <div class="case-card">
+                <div class="case-header">
+                    <div class="client-logo">
+                        <img src="assets/clients/ecommerce.svg" alt="Ecommerce Brand">
+                    </div>
+                    <div class="case-stats">
+                        <div class="stat-value">5.4x</div>
+                        <div class="stat-label">ROAS</div>
+                    </div>
+                </div>
+                <div class="case-content">
+                    <h3 class="case-title">Ecommerce Growth</h3>
+                    <p class="case-desc">Our autonomous bidding system optimized thousands of product campaigns simultaneously, achieving record profitability during peak season.</p>
+                </div>
+                <div class="case-cta">
+                    <a href="#" class="text-link">Read Case Study →</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Team Section -->
+    <section class="team-section">
+        <div class="section-header">
+            <h2 class="section-title">Our <span class="gradient-text">AI Experts</span></h2>
+            <p class="section-subtitle">The minds behind our technology</p>
+        </div>
+        <div class="team-grid">
+            <div class="team-card">
+                <div class="team-photo">
+                    <img src="assets/team/ceo.jpg" alt="Dr. Sarah Chen">
+                    <div class="team-decor"></div>
+                </div>
+                <div class="team-info">
+                    <h3 class="team-name">Dr. Sarah Chen</h3>
+                    <div class="team-title">Chief AI Scientist</div>
+                    <p class="team-bio">Former Google Brain researcher with 14 patents in machine learning applications.</p>
+                    <div class="team-links">
+                        <a href="#" class="team-link">
+                            <svg width="16" height="16" viewBox="0 0 24 24">
+                                <path d="M19,3A2,2 0 0,1 21,5V19A2,2 0 0,1 19,21H5A2,2 0 0,1 3,19V5A2,2 0 0,1 5,3H19M18.5,18.5V13.2A3.26,3.26 0 0,0 15.24,9.94C14.39,9.94 13.4,10.46 12.92,11.24V10.13H10.13V18.5H12.92V13.57C12.92,12.8 13.54,12.17 14.31,12.17A1.4,1.4 0 0,1 15.71,13.57V18.5H18.5M6.88,8.56A1.68,1.68 0 0,0 8.56,6.88C8.56,5.95 7.81,5.19 6.88,5.19A1.69,1.69 0 0,0 5.19,6.88C5.19,7.81 5.95,8.56 6.88,8.56M8.27,18.5V10.13H5.5V18.5H8.27Z"/>
+                            </svg>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="team-card">
+                <div class="team-photo">
+                    <img src="assets/team/cto.jpg" alt="Mark Rodriguez">
+                    <div class="team-decor"></div>
+                </div>
+                <div class="team-info">
+                    <h3 class="team-name">Mark Rodriguez</h3>
+                    <div class="team-title">CTO</div>
+                    <p class="team-bio">Built AI systems for Fortune 500 companies before founding NEXA AI.</p>
+                    <div class="team-links">
+                        <a href="#" class="team-link">
+                            <svg width="16" height="16" viewBox="0 0 24 24">
+                                <path d="M19,3A2,2 0 0,1 21,5V19A2,2 0 0,1 19,21H5A2,2 0 0,1 3,19V5A2,2 0 0,1 5,3H19M18.5,18.5V13.2A3.26,3.26 0 0,0 15.24,9.94C14.39,9.94 13.4,10.46 12.92,11.24V10.13H10.13V18.5H12.92V13.57C12.92,12.8 13.54,12.17 14.31,12.17A1.4,1.4 0 0,1 15.71,13.57V18.5H18.5M6.88,8.56A1.68,1.68 0 0,0 8.56,6.88C8.56,5.95 7.81,5.19 6.88,5.19A1.69,1.69 0 0,0 5.19,6.88C5.19,7.81 5.95,8.56 6.88,8.56M8.27,18.5V10.13H5.5V18.5H8.27Z"/>
+                            </svg>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="team-card">
+                <div class="team-photo">
+                    <img src="assets/team/cmo.jpg" alt="Priya Patel">
+                    <div class="team-decor"></div>
+                </div>
+                <div class="team-info">
+                    <h3 class="team-name">Priya Patel</h3>
+                    <div class="team-title">CMO</div>
+                    <p class="team-bio">Bridges the gap between marketing strategy and AI implementation.</p>
+                    <div class="team-links">
+                        <a href="#" class="team-link">
+                            <svg width="16" height="16" viewBox="0 0 24 24">
+                                <path d="M19,3A2,2 0 0,1 21,5V19A2,2 0 0,1 19,21H5A2,2 0 0,1 3,19V5A2,2 0 0,1 5,3H19M18.5,18.5V13.2A3.26,3.26 0 0,0 15.24,9.94C14.39,9.94 13.4,10.46 12.92,11.24V10.13H10.13V18.5H12.92V13.57C12.92,12.8 13.54,12.17 14.31,12.17A1.4,1.4 0 0,1 15.71,13.57V18.5H18.5M6.88,8.56A1.68,1.68 0 0,0 8.56,6.88C8.56,5.95 7.81,5.19 6.88,5.19A1.69,1.69 0 0,0 5.19,6.88C5.19,7.81 5.95,8.56 6.88,8.56M8.27,18.5V10.13H5.5V18.5H8.27Z"/>
+                            </svg>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section class="cta-section">
+        <div class="cta-container">
+            <h2 class="cta-title">Ready to Experience AI-Powered Marketing?</h2>
+            <p class="cta-subtitle">Schedule a consultation with our AI experts to discuss your specific needs</p>
+            <button class="primary-btn magnetic">Book Strategy Session</button>
+        </div>
+    </section>
+
+    <!-- Footer (same as homepage) -->
+</body>
+</html>
