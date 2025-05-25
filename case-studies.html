@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AI Marketing Case Studies | NEXA AI</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.4/gsap.min.js"></script>
+</head>
+<body>
+    <!-- Navigation (same as homepage) -->
+    
+    <!-- Case Studies Hero -->
+    <section class="case-studies-hero">
+        <div class="hero-content">
+            <h1 class="hero-title">
+                <span class="title-line">Proven AI</span>
+                <span class="title-line gradient-text">Marketing Results</span>
+            </h1>
+            <p class="hero-subtitle">See how our AI-driven approach has transformed businesses across industries</p>
+        </div>
+        <div class="hero-visual">
+            <div class="results-graph" id="resultsGraph"></div>
+        </div>
+    </section>
+
+    <!-- Case Studies Grid -->
+    <section class="case-studies-grid">
+        <div class="section-header">
+            <h2 class="section-title">Our <span class="gradient-text">Case Studies</span></h2>
+            <p class="section-subtitle">Real clients, measurable results powered by AI</p>
+        </div>
+        
+        <div class="case-filters">
+            <div class="filter-group">
+                <label for="industry-filter" class="filter-label">Industry:</label>
+                <select id="industry-filter" class="filter-select">
+                    <option value="all">All Industries</option>
+                    <option value="ecommerce">Ecommerce</option>
+                    <option value="saas">SaaS</option>
+                    <option value="fintech">Fintech</option>
+                    <option value="healthcare">Healthcare</option>
+                    <option value="b2b">B2B</option>
+                </select>
+            </div>
+            <div class="filter-group">
+                <label for="service-filter" class="filter-label">Service:</label>
+                <select id="service-filter" class="filter-select">
+                    <option value="all">All Services</option>
+                    <option value="ppc">PPC</option>
+                    <option value="seo">SEO</option>
+                    <option value="content">Content</option>
+                    <option value="social">Social</option>
+                    <option value="crm">CRM</option>
+                </select>
+            </div>
+        </div>
+        
+        <div class="cases-container">
+            <!-- Case Study 1 -->
+            <div class="case-study-card" data-industry="ecommerce" data-service="ppc">
+                <div class="case-image">
+                    <img src="assets/cases/ecommerce-ppc.jpg" alt="Ecommerce PPC Case Study">
+                    <div class="case-stats">
+                        <div class="stat-item">
+                            <div class="stat-value">5.7x</div>
+                            <div class="stat-label">ROAS</div>
+                        </div>
+                        <div class="stat-item">
+                            <div class="stat-value">+214%</div>
+                            <div class="stat-label">Revenue</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="case-content">
+                    <div class="case-client">
+                        <img src="assets/clients/fashion-brand.svg" alt="Fashion Brand" class="client-logo">
+                        <div class="client-info">
+                            <div class="client-name">Global Fashion Brand</div>
+                            <div class="client-industry">Ecommerce</div>
+                        </div>
+                    </div>
+                    <h3 class="case-title">AI-Optimized Paid Media Strategy</h3>
+                    <p class="case-excerpt">Our predictive bidding algorithms identified high-value customer segments that traditional targeting missed, reducing CPA by 62% while increasing order value.</p>
+                    <div class="case-cta">
+                        <button class="secondary-btn magnetic">Read Full Study</button>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Case Study 2 -->
+            <div class="case-study-card featured" data-industry="saas" data-service="seo">
+                <div class="featured-badge">Featured</div>
+                <div class="case-image">
+                    <img src="assets/cases/saas-seo.jpg" alt="SaaS SEO Case Study">
+                    <div class="case-stats">
+                        <div class="stat-item">
+                            <div class="stat-value">3.2x</div>
+                            <div class="stat-label">Traffic</div>
+                        </div>
+                        <div class="stat-item">
+                            <div class="stat-value">+187%</div>
+                            <div class="stat-label">Leads</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="case-content">
+                    <div class="case-client">
+                        <img src="assets/clients/saas-company.svg" alt="SaaS Company" class="client-logo">
+                        <div class="client-info">
+                            <div class="client-name">Enterprise SaaS Company</div>
+                            <div class="client-industry">B2B Software</div>
+                        </div>
+                    </div>
+                    <h3 class="case-title">Predictive SEO Content Strategy</h3>
+                    <p class="case-excerpt">Our AI identified emerging search trends 6 months before competitors, allowing content to rank first for high-value commercial intent keywords.</p>
+                    <div class="case-cta">
+                        <button class="primary-btn magnetic">Read Full Study</button>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Case Study 3 -->
+            <div class="case-study-card" data-industry="fintech" data-service="crm">
+                <div class="case-image">
+                    <img src="assets/cases/fintech-crm.jpg" alt="Fintech CRM Case Study">
+                    <div class="case-stats">
+                        <div class="stat-item">
+                            <div class="stat-value">42%</div>
+                            <div class="stat-label">Retention</div>
+                        </div>
+                        <div class="stat-item">
+                            <div class="stat-value">3.5x</div>
+                            <div class="stat-label">LTV</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="case-content">
+                    <div class="case-client">
+                        <img src="assets/clients/fintech.svg" alt="Fintech Company" class="client-logo">
+                        <div class="client-info">
+                            <div class="client-name">Mobile Banking App</div>
+                            <div class="client-industry">Fintech</div>
+                        </div>
+                    </div>
+                    <h3 class="case-title">AI-Powered Customer Retention</h3>
+                    <p class="case-excerpt">Our churn prediction models identified at-risk customers with 94% accuracy, enabling targeted interventions that reduced attrition by 42%.</p>
+                    <div class="case-cta">
+                        <button class="secondary-btn magnetic">Read Full Study</button>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Case Study 4 -->
+            <div class="case-study-card" data-industry="healthcare" data-service="content">
+                <div class="case-image">
+                    <img src="assets/cases/healthcare-content.jpg" alt="Healthcare Content Case Study">
+                    <div class="case-stats">
+                        <div class="stat-item">
+                            <div class="stat-value">8.3x</div>
+                            <div class="stat-label">Engagement</div>
+                        </div>
+                        <div class="stat-item">
+                            <div class="stat-value">+312%</div>
+                            <div class="stat-label">Conversions</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="case-content">
+                    <div class="case-client">
+                        <img src="assets/clients/healthcare.svg" alt="Healthcare Provider" class="client-logo">
+                        <div class="client-info">
+                            <div class="client-name">Healthcare Provider</div>
+                            <div class="client-industry">Medical Services</div>
+                        </div>
+                    </div>
+                    <h3 class="case-title">Personalized Content at Scale</h3>
+                    <p class="case-excerpt">Our NLP models created dynamic content variations tailored to different patient personas, dramatically increasing engagement and conversions.</p>
+                    <div class="case-cta">
+                        <button class="secondary-btn magnetic">Read Full Study</button>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Case Study 5 -->
+            <div class="case-study-card" data-industry="b2b" data-service="social">
+                <div class="case-image">
+                    <img src="assets/cases/b2b-social.jpg" alt="B2B Social Case Study">
+                    <div class="case-stats">
+                        <div class="stat-item">
+                            <div class="stat-value">6.1x</div>
+                            <div class="stat-label">Leads</div>
+                        </div>
+                        <div class="stat-item">
+                            <div class="stat-value">-58%</div>
+                            <div class="stat-label">Cost per Lead</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="case-content">
+                    <div class="case-client">
+                        <img src="assets/clients/manufacturing.svg" alt="Manufacturing Company" class="client-logo">
+                        <div class="client-info">
+                            <div class="client-name">Industrial Manufacturer</div>
+                            <div class="client-industry">B2B</div>
+                        </div>
+                    </div>
+                    <h3 class="case-title">Social Listening for Lead Gen</h3>
+                    <p class="case-excerpt">Our AI identified commercial intent signals across social platforms, enabling hyper-targeted outreach that generated 6x more qualified leads.</p>
+                    <div class="case-cta">
+                        <button class="secondary-btn magnetic">Read
